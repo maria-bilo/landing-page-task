@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" >
     <title>Document</title>
     <style>
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin-bottom: 400px;
+}
 
 .footer {
             max-width: 980px;
@@ -65,6 +74,7 @@ h1,
     flex-direction: column;
 } 
 
+=======
 display: flex;
     flex-directon: column;
     ================
@@ -96,23 +106,22 @@ display: flex;
     }
 }
 
+/*@media (min-width: 400px) {
+    main > .headline #about-school .more-about-school .video-about-school {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+}*/
 h1,
 #header-img {
     font-size: 3.5rem;
     text-align: center;
 }
-
-.header-nav__menu a {
-    text-decoration: none;
-    color: brown;
-}
-
-.header-nav__menu a:hover {
-    text-decoration: underline;
-}
        
 .header-banner {
-    background-image: url(family-learning.png);
+    background-image: url(img/family-learning.png);
     min-height: 600px;
     background-size: cover;
     background-position: center;
@@ -121,133 +130,224 @@ h1,
     justify-content: center;
     flex-direction: column;
     opacity: 0.8;
+    margin-bottom: 500px;
+    height: 400px;
 }
 
+@media (min-width: 500px) {
+main {
+position: relative;
+height: 800px;
+}
+
+main .headline {
+position: absolute;
+left: 0px;
+top: -800px;
+}
+
+main #about-school {
+position: absolute;
+left: 0px;
+top: 1300px;
+margin-left: 250px;
+}
+
+main .more-about-school {
+position: absolute;
+left: 0px;
+top: 1800px;
+margin-left: 400px;
+}
+
+main .video-about-school {
+position: absolute;
+left: 0px;
+top: 2500px;
+margin-left: 400px;
+}
+}
+footer .footer-container {
+position: absolute;
+left: 0px;
+top: 3500px;
+margin-left: 0;
+margin-right: 0;
+background-color: bisque;
+padding-left: 300px;
+}
+
+@media (min-width: 400px) {
 .headline {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    size: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding-top: 100px;
+margin-top: 1200px;
+margin-left: 220px;
+background-color: bisque;
+}
 }
 
+@media (min-width: 400px) {
 #about-school {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            padding: 50px;
-            margin: 20px;
-        }
-        
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 50px;
+margin: 20px;
+margin-left: 220px;
+padding-top: 100px;
+margin-top: 600px;
+background-color: bisque;
+}
+}   
+
+@media (min-width: 400px) {
 .more-about-school {
-            display: flex; 
-            flex-direction: column; 
-            justify-content: center;
-            align-items: center;
-            padding: 50px;
-        }
+display: flex; 
+flex-direction: column; 
+justify-content: center;
+align-items: center;
+padding: 50px;
+padding-top: 200px;
+margin-top: 900px;
+margin-left: 220px;
+background-color: bisque;
+}
+}
+
+@media (min-width: 500px) {
 .video-about-school {
-            display: flex; 
-            flex-direction:column; 
-            align-items: center
-        }
+display: flex; 
+flex-direction:column; 
+align-items: center;
+padding-top: 600px;
+margin-top: 900px;
+margin-left: 220px;
+background-color: bisque;
+}
+}
 .logo {
-    opacity: 10;
-    color: purple;
+opacity: 10;
+color: purple;
 }    
-#english-for-children {
-    size: 40;
-}  
+ 
 
 @media (min-width: 500px) {
 
 #headline > .english-for-children {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex: 1;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+flex: 1;
 }
 }
 
 @media (min-width: 500px) {
 #about-school {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex: 1;
-    padding-left: 300px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+flex: 1;
+padding-left: 300px;
 }
 
+@media (min-width: 500px) {
 .more-about-school {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex: 1;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+flex: 1;
+}
 }
 
+@media (min-width: 400px) {
 .pricing {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex: 1;
-    padding-left: 100px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+flex: 1;
+padding-left: 100px;
 }
 }
+
 @media (min-width: 400px) {
     .about-school {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex: 1;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+flex: 1;
     }
 }
 
 @media (min-width: 400px) {
 .more-about-school {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex: 1;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+flex: 1;
     }
 }
 
-@media (min-width: 400px) {
-   
-}
 @media (min-width: 280px) {
     .apply {
-        width: 400px;
+width: 400px;
     }
 }
 .apply {
-    display: flex;
+display: flex;
     
 }
 .decoration {
-    color: red;
-    text-decoration: solid;
+color: red;
+text-decoration: solid;
 }
 
 @media (min-width: 200px) {
     #form {
-        display: flex;
-        flex-shrink: 1;
+display: flex;
+flex-shrink: 1;
     }
 }
 
 .to-apply {
-    margin-left: 140px;
+margin-left: 140px;
 }
 .footer-container {
-    margin-left: 250px;
+width: 100%;
+margin-left: 300px;
+margin-right: 300px;
+padding-top: 50px;
+margin-top: 900px;
+background-size: cover;
+    
+}
+@media (min-width: 400px) {
+    main {
+    display: flex;
+    flex-direction: column;
+    }
+}
+
+@media (min-width: 400px) {
+    main  > .headline #about-school .more-about-school .video-about-school {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    }
 }
     </style>
     </head>
@@ -255,7 +355,7 @@ h1,
     <header id="header">
         <nav id="nav-bar">
           <div class="container">
-            <img src="img/language-school.jpeg" id="header-img" alt="Happy Dots School">
+            <img id="header-img" alt="Happy Dots School" src="https://file:///C:/Users/LSU/Desktop/HTML/img/language-school.jpeg">
             <div class="header-nav__menu">
             <a class="nav-link" href="#header">Header</a>
             <a class="nav-link" href="#header-img">Main</a>
@@ -267,8 +367,10 @@ h1,
           <h1 class="header-banner__h1"><span class="logo">HappyDots</span></h1>
         </div>
       </header>
-
-<hr>
+      <br />
+      <br />
+      <br />
+      <br />
 <main>
     <section class="headline">
     <div id="english-for-children">
@@ -276,14 +378,14 @@ h1,
         <p>Interactive and interesting approach</p>
     </h1>
     <div style="text-align: center">
-        <img src="english-for-kids.png" alt="Teaching approach" style="width: 70%">
+        <img src="img/english-for-kids.png" alt="Teaching approach" style="width: 70%">
     </div>
     </div>
     </section>
-<hr>
+
     <section id="about-school">
         <div class="about-school-items">
-            <h2>About School</h2>
+            <h2 style="padding-left: 70px;">About School</h2>
         <div class="about-school-container">
             <span class="decoration">--</span><p style="width: 60%; font-size: 18px">
                 Lessons last for 30 minutes and are full of intractive information.</p>
@@ -300,12 +402,11 @@ h1,
           </div>
         </div>
     </section>
-</main>
 
 <section class="more-about-school">
     <section class="more-about-school-details">
-        <div id="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/NIk1-ck4c6Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="videowrapper">
+            <iframe id="video" src="https://www.youtube.com/embed/NIk1-ck4c6Q" title="YouTube video player" name="iframe" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     
     <section id="apply">
@@ -324,14 +425,13 @@ h1,
       </section>
     </section>
 </section>
-    <hr>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script><div id="fcc_test_suite_wrapper" style="position: relative !important; z-index: 99999 !important;"></div>
     <div id="fcc_test_suite_wrapper" style="position: relative !important; z-index: 99999 !important;"></div>
-    
+</main>
     <footer>
         <div class="footer-container">
-        <h2 class="pricing-options" style="padding-left: 350px;">Pricing Options</h2>
+        <h2 class="pricing-options" style="padding-left: 430px;">Pricing Options</h2>
         <div style="width: 60%; font-size: 18px;">
             <div id="footer" class="container">
                 <div class="pricing">
@@ -341,7 +441,7 @@ h1,
                 </div>
                 <div class="pricing">
                   <span>Premium</span><br>
-                  <span>£35</span>
+                  <span style="padding-left: 10px;">£35</span>
                   <p>Classes, recordings, handouts</p>
                 </div>
               </div>
